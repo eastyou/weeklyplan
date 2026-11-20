@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weeklyplan"
+version = "0.1.0"
+description = "学生周计划表：任务 CSV 一键生成 A4 可打印周计划"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["weekly-plan", "student", "planner", "education", "print", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+weeklyplan = "weeklyplan.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/weeklyplan"
+Source = "https://github.com/eastyou/weeklyplan"
+
+[tool.setuptools]
+packages = ["weeklyplan"]
